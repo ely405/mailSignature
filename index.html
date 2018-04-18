@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .c-white {
+            color: white;
+        }
+
+        /* contenedor */
+        .signature-container {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+            grid-gap: 16px;
+            grid-auto-flow: row dense;
+        }
+
+        /* imagen */
+        .img-box{
+           text-align: center;
+           margin: auto;
+        }
+        .logo-img{
+            object-fit: cover;
+            width: 100%;
+            max-width: 10rem;
+            height: auto;
+        }
+
+        .contact, .social-icons{
+            list-style: none;
+        }
+
+        .contact li, .social-icons li {
+            padding: 0.3rem;
+        }
+
+        .contact li a, .social-icons li a {
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+        
+        .contact li a:hover, .social-icons li a:hover{
+            color: pink;
+        }
+        /* .social-icons */
+        .social-icons{
+            display: flex;
+        }
+
+
+    </style>
+    <style>
+        @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uwo3o9');
+  src:  url('fonts/icomoon.eot?uwo3o9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uwo3o9') format('truetype'),
+    url('fonts/icomoon.woff?uwo3o9') format('woff'),
+    url('fonts/icomoon.svg?uwo3o9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1rem;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-external-link:before {
+  content: "\e904";
+}
+.icon-phonelink:before {
+  content: "\e905";
+}
+.icon-web:before {
+  content: "\e903";
+}
+.icon-linkedin3:before {
+  content: "\e902";
+  color: #0077b5;
+}
+.icon-github:before {
+  content: "\e900";
+}
+.icon-whatsapp2:before {
+  content: "\e901";
+  color: #25d366;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-mail:before {
+  content: "\e945";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+.icon-2x{
+    font-size: 1.5rem;
+}
+
+    </style>
+    <section class="signature-container bg-black">
+        <div class="img-box">
+            <img src="logo.png" alt="" class="logo-img">
+        </div>
+        <div class="data-box c-white">
+            <h3>Elizabeth Condori</h3>
+            <h5>Frontend developer junior</h5>
+            <ul class="contact">
+                    <li class="">
+                            <a href="https://ely405.github.io/portfolio/" target="_blank" class='c-white'>
+                                <i class="icon-web"></i> https://ely405.github.io/portfolio
+                            </a>
+                        </li>
+                <li class="">
+                    <a href="mailto:elizabeth.condori@outlook.com?Subject=Hello%20again" target="_top" class='c-white'>
+                        <i class="icon-mail"></i> elizabeth.condori@outlook.com
+                    </a>
+                </li>
+                <li class="">
+                    <a href="tel:+51935191659" class='c-white'>
+                        <i class="icon-phone"></i> +51935191659
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li class="">
+                    <a target='_blank' class='c-white' href="https://pe.linkedin.com/in/elizabeth-condori">
+                        <i class="icon-linkedin icon-2x"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a target='_blank' class='c-white' href="https://github.com/ely405">
+                        <i class="icon-github icon-2x "></i>
+                    </a>
+                </li>
+                <li class="">
+                        <a target='_blank' class='c-white p-03rem' href="https://api.whatsapp.com/send?phone=51935191659">
+                            <i class="icon-whatsapp icon-2x "></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
